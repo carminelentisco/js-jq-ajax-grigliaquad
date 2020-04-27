@@ -15,23 +15,17 @@ body {
     background-color: #000;
 }
 
-/* Utility */
-.green {
-    background-color: green;
-}
-
-.yellow {
-    background-color: yellow;
-}
-
 /* GAME BOX */
 .game-box {
     display: flex;
     flex-direction: column;
 }
-/* single box */
+
+.row {
+    display: flex;
+}
+
 .box {
-    display: inline-flex;
     height: 40px;
     width: 40px;
     margin: 5px;
@@ -39,6 +33,9 @@ body {
     background-color: #fff;
     cursor: pointer;
     transition: transform .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box:hover {
